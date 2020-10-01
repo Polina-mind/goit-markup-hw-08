@@ -2,11 +2,11 @@
 %button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: flex;
     /* padding: 0;
       margin: 0; */
     min-width: 200px;
-    /* height: 50px; */
+    height: 50px;
     border: 1px solid transparent;
     border-color: $accentColor;
     border-radius: 4px;
@@ -43,11 +43,13 @@
   .button-primary {
     @extend %button;
     padding: 15px 30px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 200px;
   }
   
   .button-secondary {
-    @extend %button;
+    @extend %button;   
     padding: 10px;
     margin-bottom: 94px;
   }

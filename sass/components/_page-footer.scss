@@ -1,10 +1,11 @@
 /* footer */
 .section-footer {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: $bgColor;
-  }
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $bgColor;
   
+  
+  // класс футера
   .foot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12,11 +13,11 @@
     color: $primaryWhiteColor;
   }
   
+  // контейнер с лого и адресом
   .logo-addr {
     display: block;
     margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 214px;
+    margin-bottom: 60px;    
     margin-right: 80px;
   
     .logo {
@@ -43,23 +44,24 @@
     }
   }
   
+  // Присоединяйтесь и Подпишитесь на рассылку
   .action-title {
     display: block;
     margin-top: 72px;
-    margin-bottom: 20px;
-    /* margin-right: 152px; */
+    margin-bottom: 20px;    
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
   }
   
+  // список с соц. сетями
   .join {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: 94px;
+    margin-right: 98px;
   
     &-item {
       width: calc((100% - 30px) / 4);
@@ -78,6 +80,7 @@
     }
   }
   
+  // класс той ссылки, где лежит svg соц. сети
   .join .social {
     display: block;
     width: 44px;
@@ -96,8 +99,12 @@
       background: $accentColor;
     }
   }
-  
-  .form-style input {
+    
+  .form-style {
+    display: flex;
+  }
+  .form-style input {   
+    display: inline-block;     
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -114,7 +121,10 @@
   }
   
   .button-plane {
+    display: inline-flex;
     margin-left: 10px;
     fill: $primaryWhiteColor;
   }
+}
+
   

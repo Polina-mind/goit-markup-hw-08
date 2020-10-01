@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/base';
 @import './utils/utilits';
 @import './components/section-container';
 @import './components/page-header';
@@ -7,16 +8,6 @@
 @import './components/portfolio';
 @import './components/modal-window';
 @import './components/page-footer';
-
-body {
-  margin: 0;
-  background-color: $primaryWhiteColor;
-  color: $primaryTextColor;
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;  
-}
 
 /* main */
 .hero {
@@ -31,7 +22,7 @@ body {
 
   &-title {
     display: inline-block;
-    margin: 200px 452px 30px 452px;
+    margin: 200px auto 30px auto;
     width: 696px;
     /* заменить цвет после фона */
     color: $primaryWhiteColor;
@@ -263,6 +254,7 @@ body {
 
 /* 5d section Clients */
 .clients {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,14 +266,15 @@ body {
     height: 90px;
     margin-right: auto;
     margin-left: auto;
-    /* border: 1px solid #AFB1B8; */
-    /* border-radius: 4px; */
-    /* text-align: center; */
     /* background: teal; */
   }
   
   &-item:nth-child(6n) {
     margin-right: 0;
+  }
+
+  &-item:nth-child(1n) {
+    margin-left: 0;
   }
   
   &-item:nth-last-child(-n + 6) {
