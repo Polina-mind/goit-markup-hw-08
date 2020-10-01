@@ -1,0 +1,315 @@
+@import './utils/variables';
+@import './utils/utilits';
+@import './components/section-container';
+@import './components/page-header';
+@import './components/logo';
+@import './components/button';
+@import './components/portfolio';
+@import './components/modal-window';
+@import './components/page-footer';
+
+body {
+  margin: 0;
+  background-color: $primaryWhiteColor;
+  color: $primaryTextColor;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;  
+}
+
+/* main */
+.hero {
+  margin-top: 0;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $sectionWidth;
+  /* height: 600px;  */
+  text-align: center;
+  /* outline: 1px solid crimson; */
+
+  &-title {
+    display: inline-block;
+    margin: 200px 452px 30px 452px;
+    width: 696px;
+    /* заменить цвет после фона */
+    color: $primaryWhiteColor;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }  
+}
+
+.overlay {
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $sectionWidth;
+  height: 600px;
+  background: $secondaryBgColor;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* z-index: 1; */
+}
+
+/* 2nd section Features of work */
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  &-item {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+
+    &-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      line-height: 1.14;
+      color: $titleTextColor;
+      text-transform: uppercase;
+    }
+
+    &-img {
+      width: 270px;
+      height: 120px;
+      border: 1px solid $secondaryBgColor;
+      border-radius: 4px;
+      background: $secondaryBgColor;
+      padding: 25px 102.34px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-item:last-child {
+    margin-right: 0;
+  } 
+}
+
+/* 3d section What are we doing */
+.scope {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;  
+
+  &-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    /* width: 370px;     */
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /* background: coral; */
+    z-index: 1;   
+  
+    &-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      width: 370px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      /* height: 70px;  */
+      background-color: rgba(47, 48, 58, 0.8);
+      color: $primaryWhiteColor;
+      font-weight: 700;
+      line-height: 1.14;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+  }
+  
+  &-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  &-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }    
+}
+
+/* 4d section Our team */
+.team-section {
+  padding-top: $sectionPaddingTop;
+  padding-bottom: 94px;
+  background-color: $secondaryBgColor;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  &-item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: $primaryWhiteColor;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /* background: orange; */
+
+    &-title {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: $titleTextColor;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    &-photo {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &-profession {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: $primaryTextColor;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+  
+  &-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  &-item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }     
+}
+
+.team-item .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
+.social-item {
+  width: calc((100% - 30px) / 4);
+  /* height: 44px; */
+  margin-right: 10px;
+  text-align: center;
+  /* background: teal; */
+
+  &-link {
+    display: block;
+    /* content: "";  */
+    padding: 11px;
+    width: 44px;
+    height: 44px;
+    /* border: 1px solid var(--secondary-bg-color); */
+    border-radius: 50%;
+    background-color: $primaryWhiteColor;
+    /* background-size: 20px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: #afb1b8;
+    -webkit-transition: fill 250ms $cubicParameters, background-color 250ms $cubicParameters;
+    transition: fill 250ms $cubicParameters, background-color 250ms $cubicParameters;
+    /* cursor: pointer; */
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      fill: $primaryWhiteColor;
+    }
+  }
+  
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+/* 5d section Clients */
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  &-item {
+    width: calc((100% - 150px) / 6);
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 1px solid #AFB1B8; */
+    /* border-radius: 4px; */
+    /* text-align: center; */
+    /* background: teal; */
+  }
+  
+  &-item:nth-child(6n) {
+    margin-right: 0;
+  }
+  
+  &-item:nth-last-child(-n + 6) {
+    margin-bottom: 0;
+  }
+}
+
+.client-logo {
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  /* text-align: center;     */
+  border: 1px solid $borderColor;
+  border-radius: 4px;
+  fill: #afb1b8;
+  -webkit-transition: border-color 250ms $cubicParameters, fill 250ms $cubicParameters;
+  transition: border-color 250ms $cubicParameters, fill 250ms $cubicParameters;
+  /* cursor: pointer; */
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.svg-size {
+  padding: 5px;
+}

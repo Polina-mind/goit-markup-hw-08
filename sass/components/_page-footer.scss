@@ -1,0 +1,120 @@
+/* footer */
+.section-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $bgColor;
+  }
+  
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: $primaryWhiteColor;
+  }
+  
+  .logo-addr {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 214px;
+    margin-right: 80px;
+  
+    .logo {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: $primaryWhiteColor;
+    }
+  
+    .addr {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 9px;
+      font-style: normal;
+      /* text-decoration: none;     */
+    }
+  
+    .addr-link {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 9px;
+      color: rgba(255, 255, 255, 0.6);
+      font-style: normal;
+    }
+  }
+  
+  .action-title {
+    display: block;
+    margin-top: 72px;
+    margin-bottom: 20px;
+    /* margin-right: 152px; */
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 94px;
+  
+    &-item {
+      width: calc((100% - 30px) / 4);
+      margin-right: 10px;
+      text-align: center;
+      color: $primaryWhiteColor;
+      /* background: teal; */
+    }
+    
+    &-item:nth-child(4n) {
+      margin-right: 0;
+    }
+    
+    &-item:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+  }
+  
+  .join .social {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: $primaryWhiteColor;
+    -webkit-transition: background-color 250ms $cubicParameters;
+    transition: background-color 250ms $cubicParameters;
+   
+    &:hover,
+    &:focus {
+      background: $accentColor;
+    }
+  }
+  
+  .form-style input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 0;
+    margin-bottom: 94px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: inherit;
+    cursor: pointer;
+  }
+  
+  .button-plane {
+    margin-left: 10px;
+    fill: $primaryWhiteColor;
+  }
+  

@@ -1,0 +1,110 @@
+/* шапка сайта */
+
+/* навигация nav */
+.nav-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 215px;
+    margin-right: 215px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 85px;
+  
+    .item + .item {
+      margin-left: 50px;
+    }
+  }
+  
+  // .nav .item + .item {
+  //   margin-left: 50px;
+  // }
+  
+  .nav .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $titleTextColor;
+    -webkit-transition: color 250ms $cubicParameters;
+    transition: color 250ms $cubicParameters;
+    /* cursor: pointer; */
+    /* background: #2196F3; */
+  
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+  
+  .nav .nav-link.current {
+    position: relative;
+    color: $accentColor;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $accentColor;
+      border-radius: 2px;
+    }
+  }
+  
+  /* навигация nav */
+  .auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  
+    .item + .item {
+      margin-left: 30px;
+    }
+  }
+  
+  .auth .auth-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: $primaryTextColor;
+    -webkit-transition: color 250ms $cubicParameters;
+    transition: color 250ms $cubicParameters;
+    
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+  
+  .icon-envelope,
+  .icon-smartphone {
+    margin-right: 10px;
+    padding: 0;
+    fill: currentColor;
+    /* fill= $primaryTextColor; */
+  
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
+  }
