@@ -1,23 +1,36 @@
 /* section */
 .section {
-  min-width: $sectionWidth;
+  max-width: $sectionWidth;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   /* background-color: lightblue; */
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;         
+  // }
+
+  @media screen and (min-width: 1600px) {
+    width: 1600px;  
+    padding-bottom: 94px;  
+  }
   
   &-title {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $titleTextColor;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: 1600px) {      
+      margin-bottom: 50px; 
+    }
   }
 }
   
@@ -26,30 +39,33 @@
 }
 
 .section-top {  
-  padding-top: $sectionPaddingTop;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1600px) {
+    padding-top: $sectionPaddingTop;   
+  }   
 }
   
 
 /* conteiner */
 .conteiner { 
-  
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   
-  width: $conteinerWidth;
+  max-width: $conteinerWidth;
   // outline: 1px solid crimson; 
 
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;      
-  // }
+  @media screen and (min-width: 480px) {
+    width: 480px;         
+  }
 
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;      
-  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;     
+  }
 
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;      
-  // }
+  @media screen and (min-width: 1600px) {
+    width: 1170px;    
+  }
 }

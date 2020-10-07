@@ -45,11 +45,22 @@
     padding: 15px 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 118px;
+
+    @media screen and (min-width: 1600px) {
+      margin-bottom: 200px;
+    }
   }
   
   .button-secondary {
-    @extend %button;   
+    @extend %button;       
+    width: 200px;
     padding: 10px;
-    margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;   
+
+    @media screen and (min-width: 1600px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
