@@ -35,28 +35,47 @@
   }
 
   .menu-button {
-    display: inline-flex;
-    
-    margin: 0;
-    padding: 0;
+    // display: inline-flex;    
+    width: 40px;
+    height: 40px;
+    // margin: 10px 15px 10px 0;
+    // padding: 8px;
     border: none;
-    background-color: transparent;
+    background-color: $primaryWhiteColor; 
+    transition: fill 250ms $cubicParameters;
+    cursor: pointer;
+    
+    .icon-menu {
+      display: block;
+      fill: currentColor;
 
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
+      &:hover, 
+      &:focus {
+        fill: $accentColor;
+      }
+    }    
 
     .icon-close {
       display: none;   
     }
 
     &.is-open .icon-close {
-      display: block;
-    }
+      display: block; 
+      fill: currentColor;   
+      
+      &:hover,
+      &:focus {
+        fill: $accentColor;
+      }
+    }    
 
     &.is-open .icon-menu {
       display: none;
     }    
+    
+    @media screen and (min-width: 768px) {
+      display: none;
+    }   
   }
 }  
 

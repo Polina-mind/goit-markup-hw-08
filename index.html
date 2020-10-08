@@ -25,7 +25,7 @@
             <div class="top-menu">
               <a href="./index.html" class="logo link"><span class="web-color">Web</span>Studio</a>
 
-              <button type="button" class="menu-button " aria-expanded="false" aria-controls="navigation" data-menu-button>
+              <button type="button" class="menu-button" aria-expanded="false" aria-controls="navigation" data-menu-button>
                 <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
                   <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
                   <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>               
@@ -33,7 +33,7 @@
               </button>
             </div>
             
-            <div class="navigation " id="navigation" data-menu>
+            <div class="navigation" id="navigation" data-menu>
               <ul class="nav list">
                 <li class="item"><a href="./index.html" class="nav-link link current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
@@ -232,7 +232,14 @@
 
           <ul class="team list">
             <li class="team-item"> 
-              <img src="./images/nikolai.jpg" class="team-item-photo" alt="фото Николая" width="270">
+              
+              <picture class="team-item-photo">
+                <source srcset="./images/nikolai-450.jpg" media="(max-width: 480px)">
+                <source srcset="./images/nikolai-354.jpg" media="(max-width: 768px)">
+                <source srcset="./images/nikolai-270.jpg" media="(max-width: 1600px)">
+                <img src="./images/nikolai-270.jpg" alt="фото Николая">
+              </picture>
+
               <h3 class="team-item-title">Николай Кучеренко</h3>
               <p class="team-item-profession">Product Designer</p>
               <!--нужно прописать ссылки переходов на соц. сети-->
@@ -271,7 +278,14 @@
             </li>
             
             <li class="team-item"> 
-              <img src="./images/olga.jpg" class="team-item-photo" alt="фото Ольги" width="270">
+              
+              <picture class="team-item-photo">
+                <source srcset="./images/olga-450.jpg" media="(max-width: 480px)">
+                <source srcset="./images/olga-354.jpg" media="(max-width: 768px)">
+                <source srcset="./images/olga-270.jpg" media="(max-width: 1600px)">
+                <img src="./images/olga-270.jpg" alt="фото Ольги">
+              </picture>
+
               <h3 class="team-item-title">Ольга Иванова</h3>
               <p class="team-item-profession">Frontend Developer</p>
               <!--нужно прописать ссылки переходов на соц. сети-->
@@ -310,7 +324,14 @@
             </li>
   
             <li class="team-item"> 
-              <img src="./images/andrei.jpg" class="team-item-photo" alt="фото Андрея" width="270">
+
+              <picture class="team-item-photo">
+                <source srcset="./images/andrei-450.jpg" media="(max-width: 480px)">
+                <source srcset="./images/andrei-354.jpg" media="(max-width: 768px)">
+                <source srcset="./images/andrei-270.jpg" media="(max-width: 1600px)">
+                <img src="./images/andrei-270.jpg" alt="фото Андрея">
+              </picture>
+              
               <h3 class="team-item-title">Андрей Шевченко</h3>
               <p class="team-item-profession">Marketing</p>
               <!--нужно прописать ссылки переходов на соц. сети-->
@@ -348,8 +369,15 @@
               </ul>                        
             </li>
   
-            <li class="team-item"> 
-              <img src="./images/ivan.jpg" class="team-item-photo" alt="фото Ивана" width="270">
+            <li class="team-item">         
+
+              <picture class="team-item-photo">
+                <source srcset="./images/ivan-450.jpg" media="(max-width: 480px)">
+                <source srcset="./images/ivan-354.jpg" media="(max-width: 768px)">
+                <source srcset="./images/ivan-270.jpg" media="(max-width: 1600px)">
+                <img src="./images/ivan-270.jpg" alt="фото Ивана">
+              </picture>
+
               <h3 class="team-item-title">Иван Николаев</h3>
               <p class="team-item-profession">UI Designer</p>
               <!--нужно прописать ссылки переходов на соц. сети-->
