@@ -21,16 +21,26 @@
         <header>
 
           <nav class="nav-flex">
-            <a href="./index.html" class="logo link"><span class="web-color">Web</span>Studio</a>
-            
-            <ul class="nav list">
-              <li class="item"><a href="./index.html" class="nav-link link current">Студия</a></li>
-              <li class="item"><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
-              <li class="item"><a href="./contacts.html" class="nav-link link">Контакты</a></li>
-            </ul>
-            
-            <ul class="auth list">     
 
+            <div class="top-menu">
+              <a href="./index.html" class="logo link"><span class="web-color">Web</span>Studio</a>
+
+              <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="navigation" data-menu-button>
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                  <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                  <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>               
+                </svg>
+              </button>
+            </div>
+            
+            <div class="navigation is-open" id="navigation" data-menu>
+              <ul class="nav list">
+                <li class="item"><a href="./index.html" class="nav-link link current">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+                <li class="item"><a href="./contacts.html" class="nav-link link">Контакты</a></li>
+              </ul>
+              
+              <ul class="auth list">     
                 <li class="item">                       
                   <a href="mailto:info@devstudio.com" class="auth-link link">
                     <svg class="icon-envelope" width="18px" height="16px">
@@ -47,9 +57,10 @@
                     </svg> 
                     +38 096 111 11 11
                   </a>
-                </li>
-
-            </ul>
+                </li>                    
+              </ul>
+            </div>
+            
           </nav>
 
         </header>
@@ -96,7 +107,7 @@
                 <div class="form-field">
                   <input type="tel" class="form-input" name="user-tel" id="tel" placeholder=" "/>
                   <label for="tel" class="form-label">Телефон</label>
-                  <svg class="name-icon" width="18px" height="18px">
+                  <svg class="icon-tel" width="18px" height="18px">
                     <use href="./images/sprite.svg#icon-tel"></use>
                   </svg>
                 </div>
@@ -104,7 +115,7 @@
                 <div class="form-field">
                   <input type="email" class="form-input" name="user-mail" id="mail" placeholder=" " autocomplete="on"/>
                   <label for="mail" class="form-label">Почта</label>
-                  <svg class="name-icon" width="18px" height="18px">
+                  <svg class="icon-mail" width="18px" height="18px">
                     <use href="./images/sprite.svg#icon-mail"></use>
                   </svg>
                 </div>
@@ -524,6 +535,7 @@
    
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 
 </html>

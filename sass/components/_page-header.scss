@@ -2,45 +2,116 @@
 
 /* навигация nav */
 .nav-flex {
-  margin-left: 15px;
-  margin-right: 15px;
+  position: relative; 
 
-  @media screen and (min-width: 768px) { 
+  padding-top: 16px;
+
+  @media screen and (min-width: 768px) {     
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;    
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center;    
   }    
 
-  @media screen and (min-width: 1600px) {
-    margin-left: auto;
-    margin-right: auto;
-  }  
-}
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 16px 15px;    
+    border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 768px) {
+      display: inherit;
+      padding: 0;      
+      border-bottom: transparent;
+    }
+  }
+
+  .menu-button {
+    display: inline-flex;
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    .icon-close {
+      display: none;   
+    }
+
+    &.is-open .icon-close {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }    
+  }
+}  
+
+.navigation {
+  display: none;
   
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  &.is-open {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;    
+    width: 100%;
+
+    background-color: $primaryWhiteColor;
+  
+    padding-top: 60px; 
+   padding-bottom: 60px;
+  
+   @media screen and (min-width: 768px) {  
+     position: inherit;    
+     display: flex;        
+     width: inherit;  
+    
+      padding-top: 0; 
+      padding-bottom: 0;
+    }  
+  }
+}
+
+.nav {  
+  margin-bottom: 20px;
+  text-align: center;  
 
   @media screen and (min-width: 768px) { 
-    margin-left: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 0;
+
+    // отступ не совпадает с макетом
+    margin-left: 71px;
+    text-align: inherit;  
+
+    .item + .item {
+      margin-left: 50px;
+    }
   }
 
-  @media screen and (min-width: 1600px) {
-    margin-left: 85px;
-  }    
-
-  .item + .item {
-    margin-left: 50px;
-  }
+  @media screen and (min-width: 1600px) {       
+    margin-bottom: 0;
+    margin-left: 85px;    
+  }      
 
   &-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: inline-block;
+
+    padding-bottom:40px;    
+
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
@@ -50,62 +121,76 @@
     /* cursor: pointer; */
     /* background: #2196F3; */
   
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;      
+    }
+
     &:hover,
     &:focus {
       color: $accentColor;
     }
-  }
+  }  
 
   &-link.current {
     position: relative;
-    color: $accentColor;
+    color: $accentColor;    
   
     &::after {
       position: absolute;
       content: "";
-      bottom: 0;
+      bottom: 32px;
       left: 0;
       width: 100%;
       height: 4px;
       background: $accentColor;
       border-radius: 2px;
+      
+      @media screen and (min-width: 768px) {
+        bottom: 0;
+      }
     }
   }
 }
 
-/* навигация nav */
+/* навигация телефон и меил */
 .auth {
-  padding-top: 16px;
-  padding-bottom: 5px;
-  margin-left: auto;
-
-  .item {
-    padding: 0;
-    margin: 0;
-  }
+  text-align: center; 
 
   .item + .item {
-    margin-top: 5px;
-  }   
+    margin-top: 10px;
+  } 
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px; 
+    margin-left: 71px; 
+    text-align: inherit;  
+  
+    .item {    
+      margin-bottom: -10px;
+    }
+  }  
   
   @media screen and (min-width: 1600px) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
+    margin-left: 305px;
+
     padding-top: 0;
     padding-bottom: 0;
 
     .item + .item {
       margin-left: 30px;
-    }   
-
-    .item + .item {
       margin-top: 0;
     }   
-  }     
 
-  
+    .item {    
+      margin-bottom: 0;
+    } 
+  }       
   
   &-link {
     display: -webkit-inline-box;
