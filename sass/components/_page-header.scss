@@ -4,7 +4,7 @@
 .nav-flex {
   position: relative; 
 
-  padding-top: 16px;
+  // padding-top: 16px;
 
   @media screen and (min-width: 768px) {     
     display: -webkit-box;
@@ -25,8 +25,12 @@
 
     @media screen and (min-width: 768px) {
       display: inherit;
-      padding: 0;      
+      padding: 0 0 0 15px;      
       border-bottom: transparent;
+    }
+
+    @media screen and (min-width: 1600px) {
+      padding: 0;    
     }
   }
 
@@ -59,6 +63,10 @@
 .navigation {
   display: none;
   
+  @media screen and (min-width: 768px) { 
+    display: inline-flex;
+  }
+
   &.is-open {
     display: block;
     position: absolute;
@@ -69,12 +77,12 @@
     background-color: $primaryWhiteColor;
   
     padding-top: 60px; 
-   padding-bottom: 60px;
+    padding-bottom: 60px;
   
-   @media screen and (min-width: 768px) {  
-     position: inherit;    
-     display: flex;        
-     width: inherit;  
+    @media screen and (min-width: 768px) {  
+      position: inherit;    
+      display: flex;        
+      width: inherit;  
     
       padding-top: 0; 
       padding-bottom: 0;

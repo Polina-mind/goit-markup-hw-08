@@ -118,7 +118,6 @@ body {
 /* навигация nav */
 .nav-flex {
   position: relative;
-  padding-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -143,8 +142,14 @@ body {
 @media screen and (min-width: 768px) {
   .nav-flex .top-menu {
     display: inherit;
-    padding: 0;
+    padding: 0 0 0 15px;
     border-bottom: transparent;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nav-flex .top-menu {
+    padding: 0;
   }
 }
 
@@ -176,6 +181,12 @@ body {
 
 .navigation {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: inline-flex;
+  }
 }
 
 .navigation.is-open {
@@ -650,6 +661,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
