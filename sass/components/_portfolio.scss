@@ -132,9 +132,7 @@
         font-size: 16px;
         line-height: 1.8;
       }
-    }  
-    
-    
+    }          
   }
   
   .work-img {
@@ -149,8 +147,9 @@
       height: 294px;
       background-repeat: no-repeat;
       background-position: center;
-    }
-  
+    }  
+    
+
     &.tehno::before {
       background-image: url(../images/tehno-450.jpg);
       background-size: cover;
@@ -194,6 +193,100 @@
     &.growing::before {
       background-image: url(../images/growing-450.jpg);
       background-size: cover;
+    }
+
+    @media screen and (min-width: 768px) {
+      &.tehno::before {
+        background-image: url(../images/tehno-354.jpg);
+        background-size: cover;
+      }
+      
+      &.poster::before {
+        background-image: url(../images/poster-354.jpg);
+        background-size: cover;
+      }
+      
+      &.seafood::before {
+        background-image: url(../images/seafood-354.jpg);
+        background-size: cover;
+      }
+      
+      &.headphones::before {
+        background-image: url(../images/headphones-354.jpg);
+        background-size: cover;
+      }
+      
+      &.boxes::before {
+        background-image: url(../images/boxes-354.jpg);
+        background-size: cover;
+      }
+      
+      &.monitor::before {
+        background-image: url(../images/design-354.jpg);
+        background-size: cover;
+      }
+      
+      &.magazine::before {
+        background-image: url(../images/magazine-354.jpg);
+        background-size: cover;
+      }
+      
+      &.label::before {
+        background-image: url(../images/label-354.jpg);
+        background-size: cover;
+      }
+      
+      &.growing::before {
+        background-image: url(../images/growing-354.jpg);
+        background-size: cover;
+      }
+    }
+
+    @media screen and (min-width: 1600px) {
+      &.tehno::before {
+        background-image: url(../images/tehno-370.jpg);
+        background-size: cover;
+      }
+      
+      &.poster::before {
+        background-image: url(../images/poster-370.jpg);
+        background-size: cover;
+      }
+      
+      &.seafood::before {
+        background-image: url(../images/seafood-370.jpg);
+        background-size: cover;
+      }
+      
+      &.headphones::before {
+        background-image: url(../images/headphones-370.jpg);
+        background-size: cover;
+      }
+      
+      &.boxes::before {
+        background-image: url(../images/boxes-370.jpg);
+        background-size: cover;
+      }
+      
+      &.monitor::before {
+        background-image: url(../images/design-370.jpg);
+        background-size: cover;
+      }
+      
+      &.magazine::before {
+        background-image: url(../images/magazine-370.jpg);
+        background-size: cover;
+      }
+      
+      &.label::before {
+        background-image: url(../images/label-370.jpg);
+        background-size: cover;
+      }
+      
+      &.growing::before {
+        background-image: url(../images/growing-370.jpg);
+        background-size: cover;
+      }
     }
     
     .splash {

@@ -162,6 +162,7 @@ img {
 .nav-flex .menu-button {
   width: 40px;
   height: 40px;
+  margin: 0 15px 0 0;
   border: none;
   background-color: #FFFFFF;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -656,6 +657,84 @@ img {
 .work-img.growing::before {
   background-image: url(../images/growing-450.jpg);
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .work-img.tehno::before {
+    background-image: url(../images/tehno-354.jpg);
+    background-size: cover;
+  }
+  .work-img.poster::before {
+    background-image: url(../images/poster-354.jpg);
+    background-size: cover;
+  }
+  .work-img.seafood::before {
+    background-image: url(../images/seafood-354.jpg);
+    background-size: cover;
+  }
+  .work-img.headphones::before {
+    background-image: url(../images/headphones-354.jpg);
+    background-size: cover;
+  }
+  .work-img.boxes::before {
+    background-image: url(../images/boxes-354.jpg);
+    background-size: cover;
+  }
+  .work-img.monitor::before {
+    background-image: url(../images/design-354.jpg);
+    background-size: cover;
+  }
+  .work-img.magazine::before {
+    background-image: url(../images/magazine-354.jpg);
+    background-size: cover;
+  }
+  .work-img.label::before {
+    background-image: url(../images/label-354.jpg);
+    background-size: cover;
+  }
+  .work-img.growing::before {
+    background-image: url(../images/growing-354.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .work-img.tehno::before {
+    background-image: url(../images/tehno-370.jpg);
+    background-size: cover;
+  }
+  .work-img.poster::before {
+    background-image: url(../images/poster-370.jpg);
+    background-size: cover;
+  }
+  .work-img.seafood::before {
+    background-image: url(../images/seafood-370.jpg);
+    background-size: cover;
+  }
+  .work-img.headphones::before {
+    background-image: url(../images/headphones-370.jpg);
+    background-size: cover;
+  }
+  .work-img.boxes::before {
+    background-image: url(../images/boxes-370.jpg);
+    background-size: cover;
+  }
+  .work-img.monitor::before {
+    background-image: url(../images/design-370.jpg);
+    background-size: cover;
+  }
+  .work-img.magazine::before {
+    background-image: url(../images/magazine-370.jpg);
+    background-size: cover;
+  }
+  .work-img.label::before {
+    background-image: url(../images/label-370.jpg);
+    background-size: cover;
+  }
+  .work-img.growing::before {
+    background-image: url(../images/growing-370.jpg);
+    background-size: cover;
+  }
 }
 
 .work-img .splash {
