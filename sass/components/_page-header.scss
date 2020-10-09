@@ -38,41 +38,40 @@
     // display: block;    
     width: 40px;
     height: 40px;
-    margin: 0 15px 0 0;
-    // padding: 8px;
+    margin: 0 5px 0 0;
+    padding: 0;
     border: none;
     background-color: $primaryWhiteColor; 
+    fill: #000000;
     transition: fill 250ms $cubicParameters;
-    cursor: pointer;
+    cursor: pointer;   
     
     .icon-menu {
-      display: block;
-      fill: currentColor;
-
-      &:hover, 
-      &:focus {
-        fill: $accentColor;
-      }
+      display: block;      
+      fill:  currentColor;
     }    
 
+    &:hover .icon-menu {
+      fill: $accentColor;
+    }
+   
     .icon-close {
       display: none;   
     }
 
     &.is-open .icon-close {
-      display: block; 
-      fill: currentColor;   
-      
-      &:hover,
-      &:focus {
-        fill: $accentColor;
-      }
+      display: block;
+      fill:  currentColor;             
     }    
+
+    &:hover .icon-close {
+      fill: $accentColor;
+    }
 
     &.is-open .icon-menu {
       display: none;
-    }    
-    
+    }           
+
     @media screen and (min-width: 768px) {
       display: none;
     }   
