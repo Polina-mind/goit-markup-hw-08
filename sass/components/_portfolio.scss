@@ -5,34 +5,27 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: 280px;
-    margin-right: 279px;
-    margin-bottom: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-    align-items: center;
+    flex-wrap: wrap;    
+    margin-left: 15px;   
+    margin-right: 15px;
+    margin-bottom: 50px; 
+
+    @media screen and (min-width: 768px) {
+      margin-left: auto; 
+      margin-right: auto;    
+      justify-content: center;
+    }    
   
-    &-item {
-      /* width: calc((100% - 32px) / 5); */
+    &-item {      
       padding: 0;
       margin-right: 8px;
       margin-bottom: 8px;
       /* background: coral; */
       text-align: center;
     }
-    
-    &-item:nth-child(5n) {
-      margin-right: 0;
-    }
-    
-    &-item:nth-last-child(-n + 5) {
-      margin-bottom: 0;
-    }          
   }
   
   .real-button {
-    /* margin: 8px; */
     padding: 6px 22px 6px 22px;
     border: none;
     background-color: $secondaryBgColor;
@@ -66,10 +59,16 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    
   
     &-item {
-      width: calc((100% - 60px) / 3);
-      margin-right: 30px;
+      width: calc(100% - 30px);      
+      margin-left: 15px;
+      margin-right: 15px;
       margin-bottom: 30px;
       background: $primaryWhiteColor;
       border: 1px solid #EEEEEE;
@@ -82,6 +81,24 @@
       transition: box-shadow 250ms $cubicParameters;
       transition: box-shadow 250ms $cubicParameters, -webkit-box-shadow 250ms $cubicParameters;
       
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 2);
+      }
+
+      @media screen and (min-width: 1600px) {
+        width: calc((100% - 60px) / 3);
+        margin-left: 0;
+        margin-right: 30px;           
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        
+        &:nth-last-child(-n + 3) {
+          margin-bottom: 0;
+        }
+      }      
+
       &:hover,
       &:focus {
         -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -91,7 +108,7 @@
       .work-title {
         display: block;
         padding: 20px 24px 4px 24px;
-        margin: 0;
+        margin: 0;        
         /* margin-top: 0;
           margin-bottom: 4px;
           margin-left: 24px;
@@ -117,13 +134,7 @@
       }
     }  
     
-    &-item:nth-child(3n) {
-      margin-right: 0;
-    }
     
-    &-item:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
   }
   
   .work-img {
@@ -141,39 +152,48 @@
     }
   
     &.tehno::before {
-      background-image: url(../images/tehno.jpg);
+      background-image: url(../images/tehno-450.jpg);
+      background-size: cover;
     }
     
     &.poster::before {
-      background-image: url(../images/poster.jpg);
+      background-image: url(../images/poster-450.jpg);
+      background-size: cover;
     }
     
     &.seafood::before {
-      background-image: url(../images/seafood.jpg);
+      background-image: url(../images/seafood-450.jpg);
+      background-size: cover;
     }
     
     &.headphones::before {
-      background-image: url(../images/headphones.jpg);
+      background-image: url(../images/headphones-450.jpg);
+      background-size: cover;
     }
     
     &.boxes::before {
-      background-image: url(../images/boxes.jpg);
+      background-image: url(../images/boxes-450.jpg);
+      background-size: cover;
     }
     
     &.monitor::before {
-      background-image: url(../images/monitor.jpg);
+      background-image: url(../images/design-450.jpg);
+      background-size: cover;
     }
     
     &.magazine::before {
-      background-image: url(../images/magazine.jpg);
+      background-image: url(../images/magazine-450.jpg);
+      background-size: cover;
     }
     
     &.label::before {
-      background-image: url(../images/label.jpg);
+      background-image: url(../images/label-450.jpg);
+      background-size: cover;
     }
     
     &.growing::before {
-      background-image: url(../images/growing.jpg);
+      background-image: url(../images/growing-450.jpg);
+      background-size: cover;
     }
     
     .splash {
