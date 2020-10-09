@@ -1,23 +1,20 @@
-// фон при появлении модального окна
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;    
 
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
   
-    &.is-hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
   }
   
-  // модальное окно
   .modal {   
     position: absolute;
     top: 93px;
@@ -32,7 +29,6 @@
     border-radius: 4px;
     background-color: #fff;
     z-index: 2;
-
     
     @media screen and (min-width: 768px) {     
       top: calc(50% + 10px);
@@ -54,8 +50,7 @@
       line-height: 1.15;
       text-align: center;
       color: $titleTextColor;
-    }
-    
+    }    
   }
   
   .close-button {
@@ -91,7 +86,7 @@
     margin-top: 0;
     /* outline: 1px solid hotpink; */
   
-    .form .button.primary {
+    .button.primary {
       margin-bottom: 0;
     }
 
@@ -102,11 +97,10 @@
   
   .form-field {
     position: relative;
-    // width: 100%;
+    width: 100%;
     margin-bottom: 28px;
 
-    .form-input {
-      
+    .form-input {      
       width: 100%;
       height: 40px;
       padding: 12px 42px;
@@ -131,7 +125,7 @@
       color: $accentColor;
     }
   
-    .form-input:focus ~ .name-icon {
+    .form-input:focus ~ .icon-name {
       fill: $accentColor;
     }
   
@@ -147,17 +141,13 @@
 
       -webkit-transform: translate(0, -50%);
                 transform: translate(0, -50%);
-        -webkit-transition: color 250ms $cubicParameters, font-size 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;
-        transition: color 250ms $cubicParameters, font-size 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;
-        transition: transform 250ms $cubicParameters, color 250ms $cubicParameters, font-size 250ms $cubicParameters;
-        transition: transform 250ms $cubicParameters, color 250ms $cubicParameters, font-size 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;
-         
-      @media screen and (min-width: 1600px) {                       
-                
-      }
+      -webkit-transition: color 250ms $cubicParameters, font-size 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;
+      transition: color 250ms $cubicParameters, font-size 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;
+      transition: transform 250ms $cubicParameters, color 250ms $cubicParameters, font-size 250ms $cubicParameters;
+      transition: transform 250ms $cubicParameters, color 250ms $cubicParameters, font-size 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;        
     }
   
-    .name-icon {
+    .icon-name {
       position: absolute;
       left: 16px;
       top: 11px;
@@ -171,9 +161,7 @@
   
     &.comments {
       margin-bottom: 20px;
-    }
-  
-    
+    }      
   
     textarea {
       width: 100%;
@@ -237,6 +225,17 @@
       background-origin: border-box;
       fill: $primaryWhiteColor;
     }
+
+    .agreement {
+      font-size: 12px;
+      line-height: 1.2;
+
+      @media screen and (min-width: 1600px) { 
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
   }
+}
   
   
