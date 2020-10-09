@@ -216,6 +216,7 @@ img {
   left: 0;
   top: 100%;
   width: 100%;
+  z-index: 1;
   background-color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 60px;
