@@ -765,6 +765,14 @@ img {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 1599px) {
+  .work-item a:focus .work-img .splash {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .work-img .splash .work-text {
   /* display: flex; */
   margin-top: 0;

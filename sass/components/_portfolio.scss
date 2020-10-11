@@ -309,13 +309,22 @@
       transition: transform 250ms $cubicParameters, -webkit-transform 250ms $cubicParameters;
     
       /* при ховере на итем срабатывает, а при фокусе на итем нет, поэтому фокус - на ссылку */
+
       .work-item:hover &,
       .work-item a:focus & {   
         opacity: 1;
         -webkit-transform: translateY(0);
                 transform: translateY(0);    
       }
-  
+
+      @media screen and (max-width: 1599px) {
+        .work-item a:focus & {   
+          opacity: 1;
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);    
+        }
+      }
+
       .work-text {
         /* display: flex; */
         margin-top: 0;
