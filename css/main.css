@@ -1562,17 +1562,25 @@ img {
 }
 
 .team-item .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-bottom: 24px;
-  margin-left: calc(50% - 22px);
+  margin-left: calc(50% - 88px - 15px);
+  margin-right: calc(50% - 88px - 15px);
+}
+
+@media screen and (max-width: 250px) {
+  .team-item .social {
+    display: block;
+    margin-left: calc(50% - 22px);
+  }
 }
 
 @media screen and (min-width: 480px) {
   .team-item .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     margin-left: 122px;
     margin-right: 122px;
   }
