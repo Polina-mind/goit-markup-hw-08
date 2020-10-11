@@ -114,7 +114,7 @@
     }
 
     &-img {
-      width: 450px;
+      width: 100%;
       height: 120px;      
       padding: 25px 0;
       margin-bottom: 30px;
@@ -123,8 +123,8 @@
       border-radius: 4px;
       background: $secondaryBgColor;
             
-      @media screen and (max-width: 379px) {
-        width: 100%;      
+      @media screen and (min-width: 480px) {
+        width: 450px;      
       }
 
       @media screen and (min-width: 768px) {
@@ -318,17 +318,21 @@
   }     
 }
 
-.team-item .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;      
- 
+.team-item .social {  
   padding-bottom: 24px; 
-  margin-left: 122px;
-  margin-right: 122px;
-  
+  margin-left: calc(50% - 22px);    
+
+  @media screen and (min-width: 480px) {   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+
+    margin-left: 122px;
+    margin-right: 122px;
+  }
+
   @media screen and (min-width: 768px) {    
     margin-left: 74px;
     margin-right: 74px;               
@@ -344,8 +348,13 @@
   width: calc((100% - 30px) / 4);
   /* height: 44px; */
   margin-right: 10px;
-  text-align: center;
+  // text-align: center;
+  
   /* background: teal; */
+  
+  &:nth-child(4n) {
+    margin-right: 0;    
+  }
 
   &-link {
     display: block;
@@ -353,6 +362,7 @@
     padding: 11px;
     width: 44px;
     height: 44px;
+    
     /* border: 1px solid var(--secondary-bg-color); */
     border-radius: 50%;
     background-color: $primaryWhiteColor;
@@ -370,10 +380,7 @@
       fill: $primaryWhiteColor;
     }
   }
-  
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+   
 }
 
 /* 5d section Clients */
