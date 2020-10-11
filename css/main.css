@@ -1636,20 +1636,36 @@ img {
 
 /* 5d section Clients */
 .clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .clients {
+    margin-left: calc(50% - 105px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .clients-item {
-  width: calc((100% - 15px * 4) / 2);
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
   /* background: teal; */
+}
+
+@media screen and (min-width: 480px) {
+  .clients-item {
+    width: calc((100% - 15px * 4) / 2);
+  }
 }
 
 @media screen and (min-width: 768px) {
