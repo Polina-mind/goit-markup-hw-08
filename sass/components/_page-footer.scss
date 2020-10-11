@@ -155,6 +155,9 @@
   }
     
   .form-style {
+    margin-left: 5px;
+    margin-right: 5px;
+
     @media screen and (min-width: 1600px) {
       display: flex;  
     }     
@@ -162,14 +165,13 @@
 
   .input-style {   
     // display: block;     
-    width: 450px;
+    width: 100%;
     height: 50px;
     
     padding: 15px;    
     margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    align-items: center;
+    // margin-left: 0;
+    // margin-right: 0;   
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -179,6 +181,12 @@
     color: rgba(255, 255, 255, 0.6);
     background-color: inherit;
     cursor: pointer;    
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
 
     @media screen and (min-width: 768px) {
       margin-left: 166px;
