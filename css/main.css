@@ -793,9 +793,9 @@ img {
 
 .backdrop .modal {
   position: absolute;
-  top: 93px;
-  left: calc(50% - 225px);
-  padding: 15px;
+  top: 15%;
+  left: 0;
+  padding: 40px 15px;
   width: 400px;
   height: 609px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -813,6 +813,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .backdrop .modal {
+    left: calc(50% - 225px);
     width: 450px;
     padding: 40px;
   }
@@ -820,7 +821,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .backdrop .modal {
-    top: calc(50% + 10px);
+    top: 80%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -829,13 +830,15 @@ img {
 
 @media screen and (min-width: 1600px) {
   .backdrop .modal {
+    top: 80%;
     width: 528px;
     height: 581px;
   }
 }
 
 .backdrop .modal-title {
-  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   padding-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
