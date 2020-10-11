@@ -17,8 +17,8 @@
   
   .modal {   
     position: absolute;
-    top: 93px;
-    left: 15px;    
+    top: 93px;    
+    left: calc(50% - 225px); 
 
     padding: 40px;
     width: 450px;

@@ -75,10 +75,12 @@
     }
   }
   
-  .join-block {
+  .join-block {  
     margin-bottom: 60px;
-    margin-left: 122px;
-    margin-right: 122px;
+    // margin-left: 122px;
+    // margin-right: 122px;
+    margin-left: calc(50% - 88px - 15px);
+    margin-right: calc(50% - 88px - 15px);
     // justify-content: center;
 
     @media screen and (min-width: 768px) {    
