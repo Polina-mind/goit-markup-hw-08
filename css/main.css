@@ -805,12 +805,6 @@ img {
   z-index: 2;
 }
 
-@media screen and (min-width: 400px) {
-  .backdrop .modal {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .backdrop .modal {
     left: calc(50% - 225px);
