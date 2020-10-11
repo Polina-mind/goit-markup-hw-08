@@ -107,7 +107,7 @@
   
       .work-title {
         display: block;
-        padding: 20px 24px 4px 24px;
+        padding: 20px 24px 4px 25px;
         margin: 0;        
         /* margin-top: 0;
           margin-bottom: 4px;
@@ -118,6 +118,10 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       
       .work-type {

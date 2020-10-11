@@ -123,6 +123,9 @@
       border-radius: 4px;
       background: $secondaryBgColor;
             
+      @media screen and (max-width: 379px) {
+        width: 100%;      
+      }
 
       @media screen and (min-width: 768px) {
         width: 354px;      

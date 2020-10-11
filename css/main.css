@@ -574,7 +574,7 @@ img {
 
 .work-item .work-title {
   display: block;
-  padding: 20px 24px 4px 24px;
+  padding: 20px 24px 4px 25px;
   margin: 0;
   /* margin-top: 0;
           margin-bottom: 4px;
@@ -585,6 +585,9 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-item .work-type {
@@ -1348,6 +1351,12 @@ img {
   border: 1px solid #F5F4FA;
   border-radius: 4px;
   background: #F5F4FA;
+}
+
+@media screen and (max-width: 379px) {
+  .features-item-img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
