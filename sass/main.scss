@@ -56,7 +56,8 @@
   background: $secondaryBgColor;
   // background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-480.jpg");
-  height: 400px;
+  height: 400px; 
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-768.jpg");    
   }
@@ -114,12 +115,14 @@
 
     &-img {
       width: 450px;
-      height: 120px;
+      height: 120px;      
+      padding: 25px 0;
+      margin-bottom: 30px;
+
       border: 1px solid $secondaryBgColor;
       border-radius: 4px;
       background: $secondaryBgColor;
-      padding: 25px 102.34px;
-      margin-bottom: 30px;
+            
 
       @media screen and (min-width: 768px) {
         width: 354px;      
@@ -269,8 +272,14 @@
       display: inline-block;
       margin-top: 0;
       margin-bottom: 30px;
+      
       width: 450px;
       height: 320px;
+
+      @media screen and (max-width: 479px) {
+        width: auto;
+        height: auto;
+      }
 
       @media screen and (min-width: 768px) {
         width: 354px;   

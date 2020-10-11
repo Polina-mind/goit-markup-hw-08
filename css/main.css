@@ -1344,11 +1344,11 @@ img {
 .features-item-img {
   width: 450px;
   height: 120px;
+  padding: 25px 0;
+  margin-bottom: 30px;
   border: 1px solid #F5F4FA;
   border-radius: 4px;
   background: #F5F4FA;
-  padding: 25px 102.34px;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1509,6 +1509,13 @@ img {
   margin-bottom: 30px;
   width: 450px;
   height: 320px;
+}
+
+@media screen and (max-width: 479px) {
+  .team-item-photo {
+    width: auto;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
