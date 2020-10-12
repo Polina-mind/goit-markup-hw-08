@@ -802,7 +802,7 @@ img {
 
 .backdrop .modal {
   position: absolute;
-  top: 15%;
+  top: 90px;
   left: 0;
   padding: 40px 15px;
   width: 100%;
@@ -816,6 +816,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .backdrop .modal {
+    top: 93px;
     left: calc(50% - 225px);
     width: 450px;
     padding: 40px;
@@ -824,16 +825,16 @@ img {
 
 @media screen and (min-width: 768px) {
   .backdrop .modal {
-    top: 80%;
+    top: 208px;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @media screen and (min-width: 1600px) {
   .backdrop .modal {
-    top: 80%;
+    top: 221px;
     width: 528px;
     height: 581px;
   }
