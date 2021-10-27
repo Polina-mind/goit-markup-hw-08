@@ -14,5 +14,9 @@
     "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": null,
-    "liveServer.settings.port": 1235
+    "liveServer.settings.port": 1235,
+    "cSpell.words": [
+      "Palindrom",
+      "epam"
+    ]
   }
